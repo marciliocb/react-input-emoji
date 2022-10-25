@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
-        "lib": [
+          "lib": [
             "ESNext",
         ],
-        "declaration": true
+        "target": "es5",
+        "declaration": true,
+        "allowJs": true,
+        "emitDeclarationOnly": true,
+        "outDir": "dist",
+        "declarationMap": true,
+        "jsx": "react-jsx"
     },
     "include": [
         "src/**/*"

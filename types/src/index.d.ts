@@ -1,0 +1,32 @@
+export default InputEmojiWithRef;
+export type MetionUser = import('./types/types').MentionUser;
+export type ListenerObj = import('./types/types').ListenerObj<any>;
+export type Props = {
+    value: string;
+    onChange: (value: string) => void;
+    theme: "light" | "dark" | "auto";
+    cleanOnEnter: boolean;
+    onEnter: (text: string) => void;
+    placeholder: string;
+    onResize: (size: {
+        width: number;
+        height: number;
+    }) => void;
+    onClick: () => void;
+    onFocus: () => void;
+    onBlur?: (() => void) | undefined;
+    maxLength: number;
+    keepOpened: boolean;
+    onKeyDown: (event: KeyboardEvent) => void;
+    inputClass: string;
+    disableRecent: boolean;
+    tabIndex: number;
+    height: number;
+    borderRadius: number;
+    borderColor: string;
+    fontSize: number;
+    fontFamily: string;
+    customEmojis?: object[] | undefined;
+    searchMention?: (text: string) => Promise<MetionUser[]>;
+};
+declare const InputEmojiWithRef: import("react").ForwardRefExoticComponent<Props & import("react").RefAttributes<any>>;
