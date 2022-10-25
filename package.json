@@ -72,7 +72,8 @@
     "typescript": "^4.2.3"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "dependencies": {
     "emoji-mart": "3.0.1"
